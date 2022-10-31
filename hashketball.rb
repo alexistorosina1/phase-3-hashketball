@@ -1,3 +1,4 @@
+require "pry"
 # Write your code below game_hash
 def game_hash
   {
@@ -127,3 +128,11 @@ def game_hash
 end
 
 # Write code here
+
+def all_players
+  game_hash [home][:players] + [away][:players] 
+end
+
+def num_points_scored 
+  game_hash
+end
